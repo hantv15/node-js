@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        function myDisplayer(some) {
+            document.querySelector('#demo').innerHTML = some;
+        }
+
+        function myCalculator(num1, num2) {
+            let sum = num1 + num2;
+            myDisplayer(sum)
+        }
+
+        // let result = myCalculator(2, 5);
+        // myDisplayer(result);
+        myCalculator(5, 2, myDisplayer);
+    </script>
+</body>
+
+</html>
